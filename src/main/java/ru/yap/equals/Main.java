@@ -1,6 +1,5 @@
 package ru.yap.equals;
 
-import java.lang.instrument.ClassDefinition;
 import java.util.ArrayList;
 import java.util.HashMap;
 
