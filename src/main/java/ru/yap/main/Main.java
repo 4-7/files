@@ -1,3 +1,5 @@
+package ru.yap.main;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -12,7 +14,7 @@ public class Main {
             List<String> lines = Files.readAllLines(path);
 
             ArrayList<RowDTO> dtos = new ArrayList<>();
-            for (String line: lines) {
+            for (String line : lines) {
                 String[] split = line.split(",");
                 RowDTO rowDTO = new RowDTO(
                         Integer.parseInt(split[0]),
@@ -32,7 +34,7 @@ public class Main {
     }
 }
 
-class RowDTO{
+class RowDTO {
     int first;
     String second;
     Double third;
